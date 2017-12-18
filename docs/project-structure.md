@@ -1,9 +1,26 @@
 # Project Structure
 
-| Module Name | Description       |
-| ----------- | ----------------- |
-| common      | commons and utils |
-| data-schema | schemas           |
-| service     | business          |
-| receive     | receive           |
-| web         | api for frontend  |
+## Directories
+
+```text
+├─ docs             → documents
+├─ src              → sources
+│  ├─ main
+│  │  ├─ resources  → main resources
+│  │  └─ java       → main sources
+│  └─ test
+│     ├─ resources  → test resources
+│     └─ java       → test sources
+└─ target           → generated stuff
+
+```
+
+## Modules
+
+| Module Name | Description      |
+| ----------- | ---------------- |
+| common      | utilities        |
+| data-schema | schemas          |
+| receiver    | receivers        |
+| service     | business         |
+| web         | api for frontend |
