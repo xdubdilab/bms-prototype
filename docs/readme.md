@@ -2,8 +2,10 @@
 
 ## Basics
 
-- [Document Style Guide](document-style-guide.md)
-- [Style Guide](style-guide.md)
+- [Document Style Guide](style-guides/document-style-guide.md)
+- [Style Guide](style-guides/style-guide.md)
+- [Git Branches](style-guides/git-branches.md)
+- [Git Commits](style-guides/git-commits.md)
 
 ## Development
 
