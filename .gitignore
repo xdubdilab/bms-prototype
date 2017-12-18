@@ -1,0 +1,14 @@
+*.class
+*.iml
+*.jar
+*.log
+*.rar
+*.war
+*.zip
+
+target
+
+.idea
+.vscode
+
+!/.mvn/wrapper/maven-wrapper.jar
