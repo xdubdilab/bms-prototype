@@ -1,0 +1,12 @@
+language: java
+
+dist: trusty
+
+jdk:
+  - oraclejdk8
+
+before_script:
+  - scripts/lint-docs.sh
+
+script:
+  - echo 'todo'
