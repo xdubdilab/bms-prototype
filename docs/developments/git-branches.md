@@ -1,5 +1,7 @@
 # Git Branches
 
+> Draft
+
 使用 Git Flow 分支管理模型
 
 ## 主要分支

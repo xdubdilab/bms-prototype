@@ -12,7 +12,6 @@
 │     ├─ resources  → test resources
 │     └─ java       → test sources
 └─ target           → generated stuff
-
 ```
 
 ## Modules
@@ -21,6 +20,6 @@
 | ----------- | ---------------- |
 | common      | utilities        |
 | data-schema | schemas          |
-| receiver    | receivers        |
 | service     | business         |
 | web         | api for frontend |
+| ..          | ..               |

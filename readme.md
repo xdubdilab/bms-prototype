@@ -4,4 +4,4 @@
 
 ## Development
 
-See [Documents](docs)
+See [Documents (Chinese Simplified)](docs)

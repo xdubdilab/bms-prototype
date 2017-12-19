@@ -1,22 +1,35 @@
 # Overview
 
-## Basics
+## 基础
 
-- [Document Style Guide](style-guides/document-style-guide.md)
-- [Style Guide](style-guides/style-guide.md)
-- [Git Branches](style-guides/git-branches.md)
-- [Git Commits](style-guides/git-commits.md)
+**[文档写作规范](style-guides/document-style-guide.md)**
 
-## Development
+**[代码风格指南](style-guides/code-style-guide.md)**
 
-- [Project Structure](project-structure.md)
+## 业务
 
-## References
+TODO
 
-- [Development Tools](development-tools.md)
-- [Libraries](libraries.md)
+## 开发
 
-## Appendix
+[项目结构](developments/project-structure.md)
 
-- [Glossary](glossary.md)
-- [FAQ](faq.md)
+[开发工具](developments/development-tools.md)
+
+[函式库](developments/libraries.md)
+
+[Git 分支管理](developments/git-branches.md)
+
+[Git 提交信息](developments/git-commits.md)
+
+## 运维
+
+TODO
+
+## 附录
+
+[词汇表](glossary.md)
+
+[常见问题](faq.md)
+
+## 引用
