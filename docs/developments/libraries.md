@@ -18,15 +18,17 @@
 
 (?) [Guava](https://github.com/google/guava): Google Core Libraries
 
-(?) [Config](https://github.com/typesafehub/config): Configuration
-
-(?) [ThreeTen-Extra](https://www.threeten.org/threeten-extra/): Date and Time Extension
+(?) [ThreeTen Extra](https://www.threeten.org/threeten-extra/): Date and Time Extension
 
 ## Data
 
 [Spring Data JPA](https://projects.spring.io/spring-data-jpa/)
 
 [Kafka](https://kafka.apache.org/) + [Spring Kafka](https://projects.spring.io/spring-kafka/)
+
+[Spark SQL](https://spark.apache.org/sql/)
+
+(?) [Elasticsearch](https://www.elastic.co/products/elasticsearch)
 
 (?) [Hive](https://hive.apache.org/) / [HBase](https://hbase.apache.org/)
 
@@ -41,3 +43,5 @@
 [JUnit](https://junit.org/): Unit Tests
 
 (?) [Mockito](https://mockito.org/): Mocking
+
+(?) [JMH](http://openjdk.java.net/projects/code-tools/jmh/): Benchmark
