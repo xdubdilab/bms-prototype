@@ -1,1 +1,2 @@
 rootProject.name = 'bms-prototype'
+include 'common'
