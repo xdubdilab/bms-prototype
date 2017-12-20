@@ -1,2 +1,4 @@
 rootProject.name = 'bms-prototype'
 include 'common'
+include 'data-schema'
+include 'service'
