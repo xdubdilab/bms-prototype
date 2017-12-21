@@ -58,41 +58,18 @@ git checkout -b feature-xxx develop
 # 修改代码并提交
 # ..
 
-# 合并回 develop 分支
-git pull origin develop
-git checkout develop
-git merge --no-ff feature-xxx
+# 将 feature 分支推送到远程仓库
+git push -u origin feature-xxx
 
-# 将合并后的 develop 分支推送到远程仓库
-git push origin develop
-
-# 删除本地 feature 分支
-git branch -d feature-xxx
-```
-
-### 发布稳定版本
-
-```shell
-# 新建 release 分支
-git checkout -b release-0.0.1 develop
-
-# 清理、执行所有测试、更新文档等
+# 打开 github 发起一个 pull request
 # ..
 
-# 合并回 master 和 develop 分支
-git pull
-git checkout master
-git merge --no-ff release-0.0.1
-git checkout develop
-git merge --no-ff release-0.0.1
-git push
+# 等待请求处理完毕
+# ..
 
-# 删除本地 feature 分支
-git branch -d release-0.0.1
-
-# 打上 tag
-git tag -a v0.0.1 -m 'description' master
-git push --tags
+# 清理远程和本地 feature 分支
+git push --delete origin feature-xxx
+git branch -d feature-xxx
 ```
 
 ## References
