@@ -1,7 +1,8 @@
 allprojects {
 
-  apply plugin: 'java'
   apply plugin: 'idea'
+  apply plugin: 'java'
+  apply plugin: 'checkstyle'
 
   group = 'org.ridelab'
   version = '0.0.1'
@@ -25,6 +26,11 @@ subprojects {
     compile 'org.projectlombok:lombok:1.16.18'
     compileOnly 'org.jetbrains:annotations:15.0'
     testCompile 'junit:junit:4.12'
+  }
+
+  checkstyle {
+    toolVersion = '8.5'
+    configFile = rootProject.file 'config/checkstyle/checkstyle.xml'
   }
 
 }
