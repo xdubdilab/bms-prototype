@@ -3,9 +3,7 @@ package org.ridelab.bms.common.five;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
-import static junit.framework.TestCase.assertTrue;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.*;
 
 public class FiveTest {
 

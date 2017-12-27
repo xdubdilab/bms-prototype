@@ -5,7 +5,9 @@ import lombok.experimental.FieldDefaults;
 import lombok.experimental.UtilityClass;
 
 /**
- * @see <a href="https://github.com/jackdclark/five">Five</a>
+ * A library to overcomplicate 5.
+ *
+ * @see <a href="https://github.com/jackdclark/five">five</a>
  */
 @UtilityClass
 @FieldDefaults(level = AccessLevel.PUBLIC)
@@ -36,7 +38,9 @@ public class Five {
   }
 
   String oclock() {
+    // CHECKSTYLE:OFF
     return "\uD83D\uDD54";
+    // CHECKSTYLE:ON
   }
 
 }

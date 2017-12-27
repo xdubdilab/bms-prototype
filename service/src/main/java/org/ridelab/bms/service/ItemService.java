@@ -7,7 +7,7 @@ import java.util.Optional;
 public interface ItemService {
 
   /**
-   * Find one by id
+   * Find one by id.
    *
    * @param id id
    * @return found item
@@ -15,7 +15,7 @@ public interface ItemService {
   Optional<Item> findOneById(long id);
 
   /**
-   * Find all by name
+   * Find all by name.
    *
    * @param name name
    * @return found items
