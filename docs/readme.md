@@ -12,6 +12,10 @@ TODO
 
 ## 开发
 
+[构建](developments/build.md)
+
+[测试](developments/test.md)
+
 [项目结构](developments/project-structure.md)
 
 [开发工具](developments/development-tools.md)

@@ -1,0 +1,36 @@
+allprojects {
+
+  apply plugin: 'idea'
+  apply plugin: 'java'
+  apply plugin: 'checkstyle'
+
+  group = 'org.ridelab'
+  version = '0.0.1'
+
+  sourceCompatibility = 1.8
+  targetCompatibility = 1.8
+
+  [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
+
+}
+
+subprojects {
+
+  repositories {
+    mavenCentral()
+  }
+
+  configurations {}
+
+  dependencies {
+    compile 'org.projectlombok:lombok:1.16.18'
+    compileOnly 'org.jetbrains:annotations:15.0'
+    testCompile 'junit:junit:4.12'
+  }
+
+  checkstyle {
+    toolVersion = '8.5'
+    configFile = rootProject.file 'config/checkstyle/checkstyle.xml'
+  }
+
+}

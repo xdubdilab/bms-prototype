@@ -6,9 +6,12 @@
 *.war
 *.zip
 
+build
 target
 
 .idea
 .vscode
+.gradle
 
 !/.mvn/wrapper/maven-wrapper.jar
+!/gradle/wrapper/gradle-wrapper.jar
