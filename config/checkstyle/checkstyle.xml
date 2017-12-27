@@ -8,13 +8,20 @@
 Differences to [Google's Checkstyle Configuration](http://checkstyle.sourceforge.net/google_style.html):
 
 ```
-SeparatorWrap:
-  id: SeparatorWrapDot
-  tokens: DOT
-  option: EOL
-Indentation:
-  throwsIndent: 2
-  lineWrappingIndentation: 2
+severity: error
+TreeWalker:
+  SuppressionCommentFilter:
+    onCommentFormat: CHECKSTYLE:ON
+    offCommentFormat: CHECKSTYLE:OFF
+  AvoidStarImport: disable
+  SeparatorWrap:
+    id: SeparatorWrapDot
+    tokens: DOT
+    option: EOL
+  Indentation:
+    throwsIndent: 2
+    lineWrappingIndentation: 2
+  CustomImportOrder: disable
 ```
 
 - - -
@@ -34,9 +41,10 @@ Authors: Max Vetrenko, Ruslan Diachenko, Roman Ivanov.
 <module name="Checker">
   <property name="charset" value="UTF-8"/>
 
-  <property name="severity" value="warning"/>
+  <property name="severity" value="error"/>
 
   <property name="fileExtensions" value="java, properties, xml"/>
+
   <!-- Checks for whitespace                               -->
   <!-- See http://checkstyle.sf.net/config_whitespace.html -->
   <module name="FileTabCharacter">
@@ -44,6 +52,10 @@ Authors: Max Vetrenko, Ruslan Diachenko, Roman Ivanov.
   </module>
 
   <module name="TreeWalker">
+    <module name="SuppressionCommentFilter">
+      <property name="onCommentFormat" value="CHECKSTYLE:ON"/>
+      <property name="offCommentFormat" value="CHECKSTYLE:OFF"/>
+    </module>
     <module name="OuterTypeFilename"/>
     <module name="IllegalTokenText">
       <property name="tokens" value="STRING_LITERAL, CHAR_LITERAL"/>
@@ -60,7 +72,9 @@ Authors: Max Vetrenko, Ruslan Diachenko, Roman Ivanov.
       <property name="max" value="100"/>
       <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
     </module>
+    <!--
     <module name="AvoidStarImport"/>
+    -->
     <module name="OneTopLevelClass"/>
     <module name="NoLineWrap"/>
     <module name="EmptyBlock">
@@ -197,11 +211,13 @@ Authors: Max Vetrenko, Ruslan Diachenko, Roman Ivanov.
     </module>
     <module name="OverloadMethodsDeclarationOrder"/>
     <module name="VariableDeclarationUsageDistance"/>
+    <!--
     <module name="CustomImportOrder">
       <property name="sortImportsInGroupAlphabetically" value="true"/>
       <property name="separateLineBetweenGroups" value="true"/>
       <property name="customImportOrderRules" value="STATIC###THIRD_PARTY_PACKAGE"/>
     </module>
+    -->
     <module name="MethodParamPad"/>
     <module name="NoWhitespaceBefore">
       <property name="tokens" value="COMMA, SEMI, POST_INC, POST_DEC, DOT, ELLIPSIS, METHOD_REF"/>

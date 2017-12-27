@@ -7,7 +7,7 @@
 Runs all checks:
 
 ```bash
-./gradlew check
+./gradlew clean check
 ```
 
 Runs the unit tests:
