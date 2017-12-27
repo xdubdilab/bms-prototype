@@ -19,6 +19,11 @@ IntelliJ IDEA
 - Plugins
   - Alibaba Java Coding Guidelines
   - Lombok Plugin
+  - CheckStyle-IDEA
+
+- Settings
+  - Editor >> Code Style: ☑ Enable EditorConfig support
+  - Other Settings >> Checkstyle: Add Configuration File `config/checkstyle/checkstyle.xml`
 
 [Typora (Markdown)](https://typora.io/)
 
@@ -32,7 +37,3 @@ IntelliJ IDEA
 
 - Installation
   - [Git for Windows](http://gitforwindows.org/)
-
-## Style Guide
-
-[Checkstyle](https://checkstyle.sourceforge.net/)
