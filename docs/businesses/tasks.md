@@ -119,6 +119,8 @@ TODO
 1. 同行分析：输入 mac[^mac] 及时间区间、查询在相应时间区间内与输入 mac  同行的 mac。结果展示列：同行终端 mac、采集设备地址，时间
 2. 嫌疑 mac[^mac] 分析：通过下拉框选择采集设备，输入时间区间。查询结果列出在相应时间区间内  被选中的采集设备采集到的 mac。结果展示列：mac 编号、经过点位、时间
 
+---
+
 [^mac]: MAC（Media Access Control 或者 Medium Access Control）地址，意译为媒体访问控制，或称为物理地址、硬件地址，用来定义 [网络设备](https://baike.baidu.com/item/%E7%BD%91%E7%BB%9C%E8%AE%BE%E5%A4%87) 的位置
 
 [^bms]: BikeManagement System  车管家系统
