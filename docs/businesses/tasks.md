@@ -1,4 +1,5 @@
 # bms-prototype 产品需求文档
+[有道云格式](http://note.youdao.com/noteshare?id=b9802e5eb91bfe92a8a12cfd3d7bb244&sub=E52D0279E8A746FC8A60461EA622B6D0)
 
 编写历史：
 
@@ -121,5 +122,7 @@ TODO
 [^mac]: MAC（Media Access Control 或者 Medium Access Control）地址，意译为媒体访问控制，或称为物理地址、硬件地址，用来定义 [网络设备](https://baike.baidu.com/item/%E7%BD%91%E7%BB%9C%E8%AE%BE%E5%A4%87) 的位置
 
 [^bms]: BikeManagement System  车管家系统
+
 [^ip]: Internet Protocol  网络之间互连的协议，任何厂家生产的计算机系统，只要遵守 IP 协议就可以与 [因特网](https://baike.baidu.com/item/%E5%9B%A0%E7%89%B9%E7%BD%91) 互连互通。[IP 地址](https://baike.baidu.com/item/IP%E5%9C%B0%E5%9D%80)具有唯一性
+
 [^RIDELab]: real-time intelligent distributed exploitation  实时智能分布式开发
