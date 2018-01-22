@@ -11,13 +11,16 @@ fail() {
   exit 1
 }
 
-if ! [ -x "$(command -v npm)" ]; then
-  fail 'Error: npm is not installed'
-fi
-
 if ! [ -x "$(command -v markdownlint)" ]; then
-  echo 'Installing markdownlint-cli'
-  npm install -g markdownlint-cli
+  if [ -x "$(command -v yarn)" ]; then
+    echo 'Installing markdownlint-cli with yarn'
+    yarn global add markdownlint-cli
+  elif [ -x "$(command -v npm)" ]; then
+    echo 'Installing markdownlint-cli with npm'
+    npm install -g markdownlint-cli
+  else
+    fail 'Error: both yarn and npm are not installed'
+  fi
 fi
 
 markdownlint docs
